@@ -97,7 +97,7 @@ span{
 #myChart {
     margin-top: -40rem;
     margin-left: 5rem;
-    width: 70% ;
+    width: 70% !important ;
     height: 700px ;
 }
 
