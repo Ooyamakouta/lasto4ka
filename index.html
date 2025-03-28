@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="asd.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fashion999</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/qwe.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+
+    <div class="navbar">
+        <nav>
+            <img src="imag/kurrro-removebg-preview.png" class="logo">
+            <h1 class="logoh1">fshnssn</h1>
+            <ul>
+                <li><a href="#">streams</a></li>
+                <li><a href="#">assortment</a></li>
+                <li><a href="#"><span>concurrent</span></a></li>
+            </ul>
+            <button class="btn">make order</button>
+        </nav>
+    </div>
+
+    <div class="about">
+        <h1>следите за продажами конкурентов на <span class="farfetch">FARFETCH</span> <br> и <span class="ssense">SSENSE</span> при помощи платформы fshnssn</h1>
+    </div>  
+
+    <div>
+        <canvas id="myChart"></canvas>
+    </div>
+    <div class="descr">
+        <div class="sravnenie">
+          <h1 class="sravnenieh1">наглядное сравнение</h1>
+          <h3 class="sravnenieh3">изучайте где сосредоточены <br> основные продажи, а где самый <br> высокий средний чек</h3>
+        </div>
+
+        <div class="analytic">
+          <h1 class="analytich1">подрбная аналитика</h1>
+          <h3 class="analytich3">следите за динамикой продаж на <br> каждом сайте и выявляйте <br> актуальные тренды</h3>
+        </div>
+
+        <div class="sales">
+          <h1 class="salesh1">продажи по дням</h1>
+          <h3 class="salesh3">следите за положением каточки <br> товара за день и вовремя <br> принимайте меры</h3>
+        </div>
+
+        <div class="demo">
+          <button class="demobtn">покликать демо-версию</button>
+          <h2 class="demoh2">зарегистрироваться на платформе</h2>
+        </div>
+    </div>
+
+    <div class="concurrents">
+      <h1 class="concurrents">Изучайте продажи конкурентов,<br> следите за трендами,<br> подбирайте для себя нишу</h1>
+      <img src="imag/image-removebg-preview.png">
+      <div class="coninfo">
+        <div class="block1">
+          <h2>Узнайте продажи конкурентов</h2>
+          <h3>Покажем сколько продаж каждого <br> товара, бренда или категории <br> в тенге и штуках было на farfetch <br> и ssense. Определите объем рынка, <br> вашу долю на нем и размеры <br> конкурентов </h3>
+        </div>
+
+        <div class="block2">
+          <h2>Следите за трендами и нишами</h2>
+          <h3>Покажем какие категории и бренды <br> набирают обороты, а какие стали <br> продаваться плохо. Принимайте <br> решения о закупках или запускайте <br> новые категории на основе <br> реальных данных </h3>
+        </div>
+
+        <div class="block3">
+          <h2>Реагируйте на цены</h2>
+          <h3>Наглядно отразим в каких сегментах <br> демпинг, а какие сайты <br> повышают цены. Изучите стратегии <br> конкурентов и скорректируйте свое <br> ценообразование </h3>
+        </div>
+
+        <div class="block4">
+          <h2>Изучайте выдачу в каталоге </h2>
+          <h3>Покажем динамику позиций каждого <br> товара в каталоге и по поисковым <br> запросам . Анализируйте какие <br> товары покупатели видят в первую <br> очередь </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="level">
+      <h1 class="levelh1">fshnssn - это новый уровень <br> аналитики моды</h1>
+      <div class="levelbtn">
+          <button class="btnleft">❮</button>
+          <button class="btnright">❯</button>
+      </div>
+
+      <div class="slider">
+        <div class="sliderline">
+            <div class="slide">
+                <h1>Показываем <br> продажи по <br> датам</h1>
+                <div class="tooltip-container" onclick="toggleTooltip(this)">
+                    <h3>Подробнее ^</h3>
+                    <div class="tooltip">
+                        <h4>Продажи по датам</h4>
+                        <p>Отслеживайте динамику продаж в реальном времени. Наша платформа предоставляет точные данные о продажах на FARFETCH и SSENSE с разбивкой по дням, неделям и месяцам.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <h1>Следим за новыми <br> поступлениями и <br> Sold out</h1>
+                <div class="tooltip-container" onclick="toggleTooltip(this)">
+                    <h3>Подробнее ^</h3>
+                    <div class="tooltip">
+                        <p>Получайте уведомления о новых товарах и быстро расходящихся позициях. Будьте первыми, кто узнает о горячих новинках и успешных продажах на маркетплейсах.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <h1>Анализируем по <br> брендам <br> или продавцам</h1>
+                <div class="tooltip-container" onclick="toggleTooltip(this)">
+                    <h3>Подробнее ^</h3>
+                    <div class="tooltip">
+                        <p>Исследуйте продажи конкретных брендов или продавцов. Сравнивайте эффективность разных марок и определяйте лидеров рынка в каждой категории товаров.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <h1>Изучаем <br> динамику <br> продаж</h1>
+                <div class="tooltip-container" onclick="toggleTooltip(this)">
+                    <h3>Подробнее ^</h3>
+                    <div class="tooltip">
+                        <p>Детальные графики и отчеты о динамике продаж помогут вам выявить тренды и сезонные колебания, чтобы оптимизировать свои бизнес-стратегии.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <h1>Покажем <br> график цен <br> на одежду</h1>
+                <div class="tooltip-container" onclick="toggleTooltip(this)">
+                    <h3>Подробнее ^</h3>
+                    <div class="tooltip">
+                        <p>Отслеживайте изменения цен на различные категории одежды. Наши графики помогут вам определить оптимальное время для покупок и найти выгодные предложения.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <h1>Смотрим <br> сколько товара есть <br> на складах</h1>
+                <div class="tooltip-container" onclick="toggleTooltip(this)">
+                    <h3>Подробнее ^</h3>
+                    <div class="tooltip">
+                        <p>Получайте информацию о наличии товаров на складах. Отслеживайте уровень запасов у конкурентов и планируйте свои закупки на основе реальных данных о спросе.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="how">
+      <h1 class="howh1">Как это работает</h1>
+      <img src="imag/line.png">
+      <div class="howcon">
+        <h1 class="how1">Ежедневно сканируем все <br> сайты и покупки на <br><span class="farfetch">FARFETCH</span> и <span class="soon">SSENSE</span></h1>
+        <h1 class="how2">Собранные данные <br> формируем в удобные <br> графики и отчеты <br> в личном кабинете</h1>
+        <h1 class="how3">Сравнивайте данные за <br> разные периоды <br> анализируйте категории, <br>бренды или товары</h1>
+      </div>
+    </div>
+
+    <div class="forwho">
+      <h1>Для кого подойдет fshnssn</h1>
+      <div class="forwhocon">
+        <div class="modnik">
+          <img src="imag/modnik.png">
+          <h2>модников</h2>
+          <h3>получать регулярную информацию <br> о поступлений новой партий одежды <br> на определенный сайт и поможет <br> им оставаться самыми модными</h3>
+        </div>
+
+        <div class="lubitel">
+          <img src="imag/lubitel.png">
+          <h2>любителей</h2>
+          <h3>поможет любителям не сильно <br> отставать от трендов</h3>
+        </div>
+
+        <div class="def">
+          <img src="imag/def.png">
+          <h2>обычных людей</h2>
+          <h3>для тех кому просто нужна простая <br> и удобная вещь за самую выгодную <br> цену среди всех сайтов</h3>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="tarif">
+      <h1 class="tarifh1">наши тарифы</h1>
+      <div class="buttons">
+        <button class="tarifbtn">неделя</button>
+        <button class="tarifbtn">месяц</button>
+        <button class="tarifbtn">3 месяца</button>
+        <button class="tarifbtn">6 месяцев</button>
+        <button class="tarifbtn">год</button>
+      </div>
+
+      <div class="akcii">
+        <img src="imag/akcya.png">
+        <h1>До 15.04.2077 стоимость всех тарифов снижена на -44%</h1>
+      </div>
+
+      <div class="tarifyb">
+        <h1>basic</h1>
+        <h1 class="priceb">9900 тг</h1>
+        <p>в месяц за 1 сайт</p>
+
+        <h1 >Данные доступны за 1 неделю</h1>
+
+        <h1 class="analyticb">Аналитика <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>..........................................✅</h1>
+        <h2>Площадок, категорий, брендов,<br> продавцов, товаров</h2>
+
+        <div class="characb1">
+          <h1>Продажи  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>............................................✅</h1>
+          <h1>Ассортимент  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>.....................................✅</h1>
+          <h1>Скидки  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>...............................................✅</h1>
+          <h1 class="opacity">Новинки  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>............................................❌</h1>
+          <h1 class="opacity">Sold out  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>.............................................❌</h1>
+          <h1 class="opacity">Листинг  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>.............................................❌</h1>
+          <h1 class="opacity">Рейтинги и отзывы  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>.......................❌</h1>
+        </div>
+        
+        <div class="characb2">
+          <h1 class="opacity">Поиск  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>.................................................❌</h1>
+          <h1 class="opacity">Акции  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>................................................❌</h1>
+          <h1 class="opacity">Баннеры  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>...........................................❌</h1>
+        </div>
+
+        <div class="characb3">
+          <h1 class="opacity">Экспорт  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>.............................................❌</h1>
+          <h1 class="opacity">API  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>......................................................❌</h1>
+          <h1 class="opacity">Сравнение периодов  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>....................❌</h1>
+        </div>
+
+      <button>Начать прямо сейчас</button>
+      </div>
+
+      <div class="tarifyex">
+        <h1>expert</h1>
+        <h1 class="priceex">12900 тг</h1>
+        <p>в месяц за 1 сайт</p>
+
+        <h1>Данные доступны за 2 недели</h1>
+
+        <h1 class="analyticex">Аналитика <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>..........................................✅</h1>
+        <h2>Площадок, категорий, брендов,<br> продавцов, товаров</h2>
+
+        <div class="characex1">
+          <h1>Продажи  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>............................................✅</h1>
+          <h1>Ассортимент  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>.....................................✅</h1>
+          <h1>Скидки  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>...............................................✅</h1>
+          <h1>Новинки  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>............................................✅</h1>
+          <h1>Sold out  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>.............................................✅</h1>
+          <h1 class="opacity">Листинг  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>.............................................❌</h1>
+          <h1 class="opacity">Рейтинги и отзывы  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>.......................❌</h1>
+        </div>
+        
+        <div class="characex2">
+          <h1 class="opacity">Поиск  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>.................................................❌</h1>
+          <h1 class="opacity">Акции  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>................................................❌</h1>
+          <h1 class="opacity">Баннеры  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>...........................................❌</h1>
+        </div>
+
+        <div class="characex3">
+          <h1 class="opacity">Экспорт  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>.............................................❌</h1>
+          <h1 class="opacity">API  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>......................................................❌</h1>
+          <h1 class="opacity">Сравнение периодов  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>....................❌</h1>
+        </div>
+
+      <button>Начать прямо сейчас</button>
+      </div>
+
+      <div class="tarifyen">
+        <h1>enterprice</h1>
+        <h1 class="priceen">21900 тг</h1>
+        <p>в месяц за 1 сайт</p>
+
+        <h1>Данные за всю историю наблюдений</h1>
+
+        <h1 class="analyticen">Аналитика <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>..........................................✅</h1>
+        <h2>Площадок, категорий, брендов,<br> продавцов, товаров</h2>
+
+        <div class="characen1">
+          <h1>Продажи  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>............................................✅</h1>
+          <h1>Ассортимент  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>.....................................✅</h1>
+          <h1>Скидки  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>...............................................✅</h1>
+          <h1>Новинки  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>............................................✅</h1>
+          <h1>Sold out  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>.............................................✅</h1>
+          <h1>Листинг  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>.............................................✅</h1>
+          <h1>Рейтинги и отзывы  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>.......................✅</h1>
+        </div>
+        
+        <div class="characen2">
+          <h1>Поиск  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>.................................................✅</h1>
+          <h1>Акции  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>................................................✅</h1>
+          <h1>Баннеры  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>...........................................✅</h1>
+        </div>
+
+        <div class="characen3">
+          <h1>Экспорт  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>.............................................✅</h1>
+          <h1>API  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>......................................................✅</h1>
+          <h1>Сравнение периодов  <span class="infocon">Ⓠ<span class="info">kakoi to info</span></span>....................✅</h1>
+        </div>
+
+      <button class="soon">скоро будет</button>
+      </div>
+
+      <h1 class="videoh1">Остались вопросы? <span class="video">Посмотрите видео</span> с подробной демонстрацией возможностей платформы fshnssn</h1>
+    </div>
+
+    <div class="whywe">
+      <h1 class="whyh1">Почему с нами удобно?</h1>
+      <div class="whyinfo">
+        <div class="why1">
+          <img src="imag/document.png">
+          <p>Смотрите отчеты на нашей <br> платформе, <span class="jir">экспортируйте в свою <br> систему</span> аналитики или получайте <br> данные по API</p>
+        </div>
+
+        <div class="why2">
+          <img src="imag/shopping-cart.png">
+          <p><span class="jir">Удобная оплата на сайте.</span> Или счет <br> для юр.лица или ИП. Закрывающие <br> документы автоматически появляются <br> в личном кабинете</p>
+        </div>
+        
+        <div class="why3">
+          <img src="imag/setting.png">
+          <p>Не нашли нужный вам отчет или <br> маркетплейс?  По запросу построим<br> <span class="jir">кастомный  отчет</span> в <br> любом удобном вам виде</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faqs">
+      <h1 class="otvetyh1">Ответы на ваши вопросы</h1>
+      <section>
+        <div class="faq">
+          <div class="vopros">
+            <h3>С какого года работает наш сайт ?</h3>
+  
+            <svg width="15" height="10" viewBox="0 0 42 25">
+              <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"></path>
+            </svg>
+  
+          </div>
+          <div class="otvet">
+            <p>наш сайт работает с 2025 года, но будет работать и дальше</p>
+          </div>
+        </div>
+  
+  
+        <div class="faq">
+          <div class="vopros">
+            <h3>с какого числа у вас данные?</h3>
+  
+            <svg width="15" height="10" viewBox="0 0 42 25">
+              <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"></path>
+            </svg>
+  
+          </div>
+          <div class="otvet">
+            <p>начиная с 2007 года, и по сей день</p>
+          </div>
+        </div>
+  
+  
+        <div class="faq">
+          <div class="vopros">
+            <h3>с какой погрешностью у вас показываются данные?</h3>
+  
+            <svg width="15" height="10" viewBox="0 0 42 25">
+              <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"></path>
+            </svg>
+  
+          </div>
+          <div class="otvet">
+            <p>минимальной, мы анализируем покупку на сайтах</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="chat">
+      <img src="imag/telegram.png"> 
+      <h1>Остались вопросы? Задайте в Telegram чате ›</h1>
+    </div>
+
+    <div class="see">
+      <h1>Лучше один раз увидеть</h1>
+      <p>Дадим вам демо-доступ в личный кабинет <br> Посмотрите как все работает!</p>
+      <img src="imag/see.png">
+      <button>получить демо</button>
+    </div>
+
+    <div class="email">
+      <h1>Хочешь получать советы по анализу<br> конкурентов? Раз в месяц, no spam</h1>
+      <form class="emailform">
+        <input type="email" class="emailinput" placeholder="введите ваш email" required>
+        <button>отправить</button>
+      </form>
+    </div>
+
+    <footer>
+      <div class="svyaz">
+        <h1>Свяжитесь с нами</h1>
+        <p>Если у вас остались вопросы или хотите <br> обсудить сотруденичество, пишите:</p>
+        <a href="">iliastk1504@gmail.com</a>
+        <a href="">fshnssn.com</a>
+      </div>
+
+      <div class="four">
+        <a href="">Маркетплейсы</a>
+        <a href="">Парсинг</a>
+        <a href="">Конкуренты</a>
+        <a href="">Главная</a>
+      </div>
+
+      <div class="social">
+        <a href="https://www.facebook.com/?locale=ru_RU" class="social-icon">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://ru.pinterest.com/paran01kk1d/" class="social-icon">
+          <i class="fab fa-pinterest"></i>
+        </a>
+        <h1>Следите за нами в <br> соц сетях</h1>
+      </div>
+    </footer>
+</body>
+</html>
